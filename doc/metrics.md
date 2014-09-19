@@ -21,9 +21,12 @@
 | RemotePeers             | count | maximum       | number of remote peers connected                               |
 | StorageBackoff          | msec  | maximum       | worst case time spent in backoff/retry around calls to storage |
 | StorageBackoff          | msec  | samples       | number of times a storage operation was retried                |
-| Storage{Get,Put}Bytes   | bytes | sum           | throughput of storage operations                               |
-| Storage{Get,Put}Bytes   | bytes | samples       | count of storage operations                                    |
-| Storage{Get,Put}Msec    | msec  | min, avg, max | distribution of storage latencies                              |
+| StorageGetBytes         | bytes | sum           | throughput of storage operations                               |
+| StoragePutBytes         | bytes | sum           | throughput of storage operations                               |
+| StorageGetBytes         | bytes | samples       | count of storage operations                                    |
+| StoragePutBytes         | bytes | samples       | count of storage operations                                    |
+| StorageGetMsec          | msec  | min, avg, max | distribution of storage latencies                              |
+| StoragePutMsec          | msec  | min, avg, max | distribution of storage latencies                              |
 | TransactionBytes        | bytes | sum           | volume of transaction data to log, peers                       |
 | TransactionBytes        | bytes | samples       | number of transactions                                         |
 | TransactionBytes        | bytes | min, avg, max | distribution of transaction sizes                              |
