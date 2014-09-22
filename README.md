@@ -10,11 +10,11 @@ Drop an uberjar in $DATOMIC_DIR/lib, then add this to your transactor's `propert
 metrics-callback=datomic-boundary-reporter/report-datomic-metrics-to-boundary
 ```
 
-Then you need to set these two environment variables:
+Then you need to create config.json in your classpath with the following:
 
-```
-RIEMANN_HOST=your_boundary_host
-RIEMANN_PORT=port
+```json
+{"email": "your boundary email",
+ "api-token": "your api token"
 ```
 
 Note you explicitly have to set port - this library doesn't have any defaults built into it.
