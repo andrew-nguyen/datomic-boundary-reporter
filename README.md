@@ -13,8 +13,10 @@ metrics-callback=datomic-boundary-reporter/report-datomic-metrics-to-boundary
 Then create boundary-config.json in $DATOMIC_DIR/config with the following:
 
 ```json
-{"email": "your boundary email",
- "api-token": "your api token"
+{
+  "email": "your boundary email",
+  "api-token": "your api token"
+}
 ```
 
 Then restart your transactor, and you'll see events showing up in boundary. All
