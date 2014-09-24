@@ -10,17 +10,15 @@ Drop an uberjar in $DATOMIC_DIR/lib, then add this to your transactor's `propert
 metrics-callback=datomic-boundary-reporter/report-datomic-metrics-to-boundary
 ```
 
-Then you need to create config.json in your classpath with the following:
+Then you need to create boudary-config.json in your datomic config directory with the following:
 
 ```json
 {"email": "your boundary email",
  "api-token": "your api token"
 ```
 
-Note you explicitly have to set port - this library doesn't have any defaults built into it.
-
 Then restart your transactor, and you'll see events showing up in boundary. All
-events will be tagged "datomic", and start with "datomic". Event names come
+events will start with "Datomic" in long form and "d/" in short form. Event names come
 from the metrics available on http://docs.datomic.com/monitoring.html.
 
 ## License
