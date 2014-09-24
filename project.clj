@@ -1,6 +1,6 @@
-(defproject datomic-riemann-reporter "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+(defproject datomic-boundary-reporter "0.1.0"
+  :description "Lib for reporting datomic metrics to boundary"
+  :url "http://github.com/andrew-nguyen/datomic-boundary-reporter"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]
