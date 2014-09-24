@@ -10,7 +10,7 @@ Drop an uberjar in $DATOMIC_DIR/lib, then add this to your transactor's `propert
 metrics-callback=datomic-boundary-reporter/report-datomic-metrics-to-boundary
 ```
 
-Then you need to create boudary-config.json in your datomic config directory with the following:
+Then create boundary-config.json in $DATOMIC_DIR/config with the following:
 
 ```json
 {"email": "your boundary email",
