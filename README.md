@@ -7,7 +7,7 @@ A tiny clojure library that reports datomic metrics to boundary
 Drop an uberjar in $DATOMIC_DIR/lib, then add this to your transactor's `properties` file:
 
 ```ini
-metrics-callback=datomic-boundary-reporter/report-datomic-metrics-to-boundary
+metrics-callback=datomic-boundary-reporter/report-datomic-metrics
 ```
 
 Then create boundary-config.json in $DATOMIC_DIR/config with the following:
